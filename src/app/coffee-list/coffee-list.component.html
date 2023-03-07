@@ -1,0 +1,13 @@
+<section>
+  <app-data-table
+    [data]="coffeeData$ | async"
+    [model]="tableModel"
+    [showOrder]="true"
+    (onSelected)="showDetails($event)"
+  ></app-data-table>
+  <app-paginator
+    [paginator]="paginatorState$ | async"
+    (onPageChanged)="updatePageState($event)"
+  ></app-paginator>
+</section>
+

@@ -1,0 +1,11 @@
+<nav>
+  <ul class="pagination">
+    <li class="page-item"
+        (click)="setPage(pageNumber)"
+        [class.active]="pageNumber === paginatorData.current"
+        *ngFor="let pageNumber of pageSize"
+    >
+      <span class="page-link">{{pageNumber}}</span>
+    </li>
+  </ul>
+</nav>

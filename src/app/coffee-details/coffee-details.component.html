@@ -1,0 +1,9 @@
+<section>
+  <button type="button"
+          class="btn btn-secondary"
+          (click)="returnToListPage()"
+  >Back</button>
+  <app-details-card
+    [data]="detailsData$| async"
+  ></app-details-card>
+</section>
